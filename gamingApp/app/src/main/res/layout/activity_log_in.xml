@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/border_text_input"
+        android:drawablePadding="7dp"
+        android:hint="FullName"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:theme="@style/fullname"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border_text_input"
+        android:drawablePadding="7dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:theme="@style/email"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border_text_input"
+        android:drawablePadding="7dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="20sp"
+        android:theme="@style/password"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2"
+        app:passwordToggleEnabled="true" />
+
+    <EditText
+        android:id="@+id/Password2"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border_text_input"
+        android:drawablePadding="7dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="20sp"
+        android:theme="@style/password"
+        app:layout_constraintEnd_toEndOf="@+id/Password"
+        app:layout_constraintStart_toStartOf="@+id/Password"
+        app:layout_constraintTop_toBottomOf="@+id/Password"
+        app:passwordToggleEnabled="true" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="308dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Password2"
+        app:layout_constraintStart_toStartOf="@+id/Password2"
+        app:layout_constraintTop_toBottomOf="@+id/Password2" />
+
+    <TextView
+        android:id="@+id/textViewm"
+        android:layout_width="245dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="40dp"
+        android:text="By registirng you agree to our Terms and conditions and Privacy Policy"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/button_submit"
+        app:layout_constraintStart_toStartOf="@+id/button_submit"
+        app:layout_constraintTop_toBottomOf="@+id/button_submit" />
+
+    <ImageView
+        android:id="@+id/returnToMenu"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/return_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

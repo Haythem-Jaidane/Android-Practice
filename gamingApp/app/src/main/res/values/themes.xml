@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GamingApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="hintTextColor">@color/colorPrimary</item>
+
+        <item name="colorControlNormal">#CCCCCC</item>
+        <item name="colorControlActivated">#FF0000</item>
+    </style>
+
+    <style name="email" parent="Base.Theme.GamingApp">
+        <item name="android:drawableStart">@drawable/light_email</item>
+    </style>
+
+    <style name="fullname" parent="Base.Theme.GamingApp">
+        <item name="android:drawableStart">@drawable/light_account</item>
+    </style>
+
+    <style name="titleText" parent="Base.Theme.GamingApp">
+        <item name="android:textColor">@color/colorSecondaryOverLay</item>
+    </style>
+
+    <style name="password" parent="Base.Theme.GamingApp">
+        <item name="android:drawableStart">@drawable/light_lock</item>
+        <item name="android:drawableEnd">@drawable/light_eye</item>
+    </style>
+
+    <style name="Theme.GamingApp" parent="Base.Theme.GamingApp" />
+</resources>
